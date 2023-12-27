@@ -1,0 +1,258 @@
+Body{
+    background: blue url("http://unsplash.it/1499/1005");
+    background-blend-mode:multiply;
+    resimle rengi harmanlamayi saglar, resim onde olur
+    */
+    
+ }
+ /*MAIN CONTENT{
+    background: GREEN url("http://unsplash.it/1499/1005");
+    background-blend-mode:multiply;
+    resimle rengi harmanlamayi saglar, resim onde olur
+    */
+    
+ }
+ .bi{
+     font-size: 30px;
+     color: red;
+ }
+ .bi:hover{
+     box-shadow: 0 0 10px rgb(163, 26, 26);
+     transition: 5.3s;
+ }
+ .anakapsayici{
+     background-color: wheat;
+     display: flex;
+ }
+ div {
+     background-color: yellowgreen;
+     padding: 10px;
+     margin: 10px;
+ }
+ 
+ .ozelp{
+     background-blend-mode: exclusion;
+     color: white;
+     mix-blend-mode: exclusion;
+     font-size: 30px;
+     text-transform: uppercase;
+ }
+ .div{
+     |/
+     animation: anim1;
+     animation-duration: 4s;
+     animation-delay: 1s;
+     animation-iteration-count: 2;
+     animation-direction: alternate;
+         animation: anim1 3s 1s 2 alternate ease-in-out;
+ 
+     */
+ 
+ }
+ .div:hover{
+     transition: 3s;
+     background-color: red;
+     color: white;
+     border-radius: 20px;
+ 
+ }
+ 
+ @keyframes anim1 {
+     from{
+         height: 200px;
+         width: 200px;
+         background-color: red;
+     }
+     to{
+         height: 300px;
+         width: 400px;
+         background-color: blue;
+     }
+ }
+ 
+ /* 
+ elinizde bir div olsun ve icinde yazi yazsin bunun
+ genislik yukseklik ve arka plan rengini 3 saniyede 3 kere ileri
+ geri saracak sekilde degisimini yapan bir animasyon yapiniz.
+ 
+ */
+ 
+ .div2:hover{
+     animation: anim2 4s ease 1s 3 alternate;
+ }
+ 
+ @keyframes anim2 {
+     10%{
+         background-color: blue;
+         color: white;
+         width: 300px;
+     }
+     30%{
+         background-color: green;
+         color: white;
+         width: 300px;
+     }
+     50%{
+         background-color: blue;
+         color: white;
+         width: 400px;
+     }
+ }
+ 
+ .anakapsayici1{
+     direction: rtl;
+     justify-content: center;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     filter: hue-rotate(180deg);
+ }
+ .cocuk1:nth-child(1){
+     background-color: red;
+     color: white;
+     order: 1;
+     filter: blur(2px);
+ 
+ }
+ .cocuk1:nth-child(2){
+     background-color: yellow;
+     color: red;
+     order: 2;
+     filter: brightness(300%);
+ }
+ .cocuk1:nth-child(3){
+     background-color: blue;
+     color: red;
+     order: 0;
+     filter: drop-shadow(5px 5px 5px red);
+ }
+ 
+ .cocuk1{
+     width: 100px;
+ }
+ 
+ .anakapsayici2{
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     align-items: flex-end;
+     filter: invert(100%);
+ }
+ 
+ .anakapsayici3{
+     flex-direction: column-reverse;
+     filter: opacity(70%);
+ }
+ 
+ .anakapsayici4{
+     justify-content: space-around;
+     align-items: center;
+     filter: saturate(400%);
+ }
+ 
+ .anakapsayici5{
+     justify-content: flex-end;
+     align-items: baseline;
+     filter: sepia(50%);
+ }
+ 
+ .cocuk2{
+     font-size: 20px;
+ }
+ .cocuk3{
+     font-size: 15px;
+ }
+ .cocuk4{
+     font-size: 30px;
+ }
+ 
+ .ana{
+     background-color: aqua;
+     display: grid;
+ }
+ 
+ .anadiv1{
+     grid-template-columns: 20% 100px auto 1fr;
+ 
+ }
+ .anadiv2 > div{
+     width: 100px;
+ }
+ 
+ .anadiv2{
+     grid-template-columns: repeat(3,1fr);
+     justify-content: center;
+ 
+ }
+ 
+ .anadiv2 > div:nth-child(1){
+     /*
+     grid-column-start: 1;
+     grid-column-end: 3;
+ 
+     grid-row-start: 2;
+     grid-row-end: 4;
+ 
+ 
+     grid-row: 2 / 4;
+     grid-column:  2 / 4;
+     */
+ 
+     grid-area: 2 / 2 / 4 / 4;
+ }
+ 
+ .anadiv3{
+     grid-template-areas: "ust ust . ."
+                           "alt alt sag sag" ;
+ }
+ 
+ .anadiv3 > div:nth-child(8){
+     grid-area: ust;
+ }
+ 
+ .anadiv3 > div:nth-child(10){
+     grid-area: alt;
+ }
+ 
+ #kadi:focus{
+     background-color: red;
+     width: 400px;
+ }
+ 
+ .makale p:first-letter{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+ }
+ 
+ 
+ .makale p::first-line{
+    background-color: yellow;
+ }
+ 
+ .makale p:first-child{
+     background-color: aqua;
+  }
+ 
+  .makale p:last-child{
+     background-color: firebrick;
+     border-radius: 10px;
+  }
+ 
+  .makale1 p:nth-of-type(2n+1){
+     background-color: aqua;
+     color: red;
+     font-weight: bold;
+  }
+  .makale1 > p+span{
+     background-color: blue;
+     color: white;
+  }
+ 
+  .makale1 > p::selection{
+     color: red;
+     background-color: yellow;
+  }
+ 
+  div{
+     font-family: 'Roboto', sans-serif;
+ 
+  }
